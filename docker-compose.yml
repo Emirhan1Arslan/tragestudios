@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  tragestudios-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tragestudios-website
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    networks:
+      - tragestudios-network
+
+networks:
+  tragestudios-network:
+    driver: bridge
