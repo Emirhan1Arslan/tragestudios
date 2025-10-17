@@ -47,21 +47,36 @@ npm run build
 npm run preview
 ```
 
-## Docker ile Deployment
+## Deployment
 
-### Docker Build
+### Coolify ile Deployment (Önerilen)
+
+Coolify ile tek tıkla deployment için [DEPLOYMENT.md](DEPLOYMENT.md) dosyasına bakın.
+
+**Hızlı Adımlar:**
+1. Coolify'da **New Application** → **Public Repository**
+2. Repo URL: `https://github.com/Emirhan1Arslan/tragestudios.git`
+3. Branch: `main`
+4. Build Pack: `Dockerfile` (otomatik algılanır)
+5. **Deploy** butonuna tıklayın
+
+Detaylı rehber için: [DEPLOYMENT.md](DEPLOYMENT.md)
+
+### Docker ile Deployment
+
+#### Docker Build
 
 ```bash
 docker build -t tragestudios-website .
 ```
 
-### Docker Run
+#### Docker Run
 
 ```bash
 docker run -p 8080:80 tragestudios-website
 ```
 
-### Docker Compose ile Çalıştırma
+#### Docker Compose ile Çalıştırma
 
 ```bash
 docker-compose up -d
@@ -69,7 +84,7 @@ docker-compose up -d
 
 Website `http://localhost:8080` adresinde erişilebilir olacaktır.
 
-### Docker Compose Durdurma
+#### Docker Compose Durdurma
 
 ```bash
 docker-compose down
