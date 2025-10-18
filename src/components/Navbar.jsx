@@ -44,7 +44,7 @@ const Navbar = () => {
               <Gamepad2 className="w-8 h-8 text-primary-500 group-hover:text-primary-400 transition-colors" />
               <div className="absolute inset-0 blur-xl bg-primary-500 opacity-50 group-hover:opacity-75 transition-opacity" />
             </div>
-            <span className="text-2xl font-bold text-gradient">Tragestudios</span>
+            <span className="text-2xl font-bold text-gradient">T-Rage Studios</span>
           </motion.a>
 
           {/* Desktop Menu with GooeyNav */}

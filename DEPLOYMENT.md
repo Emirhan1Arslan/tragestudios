@@ -1,6 +1,6 @@
 # Coolify Deployment Guide
 
-Bu rehber, Tragestudios web sitesini Coolify üzerinde nasıl yayınlayacağınızı açıklar.
+Bu rehber, T-Rage Studios web sitesini Coolify üzerinde nasıl yayınlayacağınızı açıklar.
 
 ## Ön Hazırlık
 
@@ -34,7 +34,7 @@ Bu rehber, Tragestudios web sitesini Coolify üzerinde nasıl yayınlayacağın�
 Eğer özel ayarlar yapmanız gerekiyorsa:
 
 ```env
-VITE_APP_NAME=Tragestudios
+VITE_APP_NAME=T-Rage Studios
 VITE_CONTACT_EMAIL=info@tragestudios.com
 ```
 

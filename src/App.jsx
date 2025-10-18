@@ -44,7 +44,7 @@ function App() {
       <footer className="relative z-10 bg-black/50 backdrop-blur-sm border-t border-white/5 py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-gray-400">
-            &copy; 2024 Tragestudios. Tüm hakları saklıdır.
+            &copy; 2024 T-Rage Studios. Tüm hakları saklıdır.
           </p>
           <p className="text-gray-500 text-sm mt-2">
             Oyun geliştirme ve yazılım çözümlerinde öncü

@@ -1,6 +1,6 @@
-# Tragestudios Website
+# T-Rage Studios Website
 
-Modern ve interaktif Tragestudios oyun geliştirme stüdyosu web sitesi.
+Modern ve interaktif T-Rage Studios oyun geliştirme stüdyosu web sitesi.
 
 ## Özellikler
 
@@ -129,4 +129,4 @@ Renk temasını değiştirmek için `tailwind.config.js` dosyasındaki `primary`
 
 ## Lisans
 
-© 2024 Tragestudios. Tüm hakları saklıdır.
+© 2024 T-Rage Studios. Tüm hakları saklıdır.

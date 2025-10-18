@@ -41,7 +41,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-400 mb-12 max-w-3xl mx-auto"
           >
-            Tragestudios olarak, yenilikçi oyunlar ve yazılım çözümleri geliştirerek
+            T-Rage Studios olarak, yenilikçi oyunlar ve yazılım çözümleri geliştirerek
             dijital deneyimleri yeniden tanımlıyoruz.
           </motion.p>
 

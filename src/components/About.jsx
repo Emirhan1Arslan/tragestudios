@@ -45,7 +45,7 @@ const About = () => {
             <span className="text-gradient">Hakkımızda</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            Tragestudios, tutkulu bir ekiple oyun ve yazılım geliştirme alanında
+            T-Rage Studios, tutkulu bir ekiple oyun ve yazılım geliştirme alanında
             yenilikçi çözümler sunan bir stüdyodur. 2020'den beri sektörde aktif
             olarak hizmet vermekteyiz.
           </p>
