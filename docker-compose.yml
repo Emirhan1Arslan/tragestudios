@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     container_name: tragestudios-website
     ports:
-      - "8080:80"
+      - "5031:80"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
