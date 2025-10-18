@@ -33,6 +33,7 @@
 
 .gooey-nav-container {
   position: relative;
+  overflow: hidden;
 }
 
 .gooey-nav-container nav {
@@ -129,7 +130,7 @@
 .gooey-nav-container .effect.filter::before {
   content: '';
   position: absolute;
-  inset: -75px;
+  inset: -30px;
   z-index: -2;
   background: black;
 }

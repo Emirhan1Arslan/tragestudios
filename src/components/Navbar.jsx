@@ -56,12 +56,12 @@ const Navbar = () => {
             >
               <GooeyNav
                 items={navItems}
-                particleCount={12}
-                particleDistances={[70, 8]}
-                particleR={80}
+                particleCount={10}
+                particleDistances={[50, 5]}
+                particleR={60}
                 initialActiveIndex={0}
                 animationTime={500}
-                timeVariance={250}
+                timeVariance={200}
                 colors={[1, 2, 3, 1, 2, 3, 1, 4]}
                 onItemClick={(item) => {
                   // Smooth scroll to section
