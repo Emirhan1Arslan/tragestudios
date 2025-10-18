@@ -6,8 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: tragestudios-website
-    ports:
-      - "5031:80"
+    expose:
+      - "80"
     restart: unless-stopped
     environment:
       - NODE_ENV=production
