@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X, Gamepad2 } from 'lucide-react'
+import GooeyNav from './GooeyNav'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -46,21 +47,31 @@ const Navbar = () => {
             <span className="text-2xl font-bold text-gradient">Tragestudios</span>
           </motion.a>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item, index) => (
-              <motion.a
-                key={item.name}
-                href={item.href}
-                className="text-gray-300 hover:text-primary-400 transition-colors relative group"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-              >
-                {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 group-hover:w-full transition-all duration-300" />
-              </motion.a>
-            ))}
+          {/* Desktop Menu with GooeyNav */}
+          <div className="hidden md:flex items-center">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 }}
+            >
+              <GooeyNav
+                items={navItems}
+                particleCount={12}
+                particleDistances={[70, 8]}
+                particleR={80}
+                initialActiveIndex={0}
+                animationTime={500}
+                timeVariance={250}
+                colors={[1, 2, 3, 1, 2, 3, 1, 4]}
+                onItemClick={(item) => {
+                  // Smooth scroll to section
+                  const element = document.querySelector(item.href);
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              />
+            </motion.div>
           </div>
 
           {/* Mobile Menu Button */}
